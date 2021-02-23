@@ -26,6 +26,19 @@ public class PhoneBookManagement {
             }
         }
     }
+    public void deleteContact(int phoneNumber){
+        contacts.removeIf(ct->ct.getPhoneNumber()==phoneNumber);{
+        }
+    }
+    public Contact getContactByPhoneNumber(int phoneNumber){
+        Contact contact = new Contact ();
+        for (Contact ct : contacts){
+            if (ct.getPhoneNumber() == phoneNumber){
+                contact = ct;
+            }
+        }
+        return contact;
+    }
     public void showAllContact(){
         for (Contact ct :contacts){
             System.out.println(ct.toString());

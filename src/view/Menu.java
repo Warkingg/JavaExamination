@@ -9,22 +9,22 @@ public class Menu {
 
     public static Contact getContactInfo() {
         Contact contact = new Contact();
-        System.out.println("Enter phone number: ");
+        System.out.println("Nhập số điện thoại: ");
         int phoneNumber = Integer.parseInt(sc.nextLine());
         contact.setPhoneNumber(phoneNumber);
-        System.out.println("Enter group: ");
+        System.out.println("Nhập nhóm: ");
         String groupContact = sc.nextLine();
         contact.setGroupContact(groupContact);
-        System.out.println("Enter name: ");
+        System.out.println("Nhập tên: ");
         String name = sc.nextLine();
         contact.setName(name);
-        System.out.println("Enter gender: ");
+        System.out.println("Nhập giới tính: ");
         String address = sc.nextLine();
         contact.setAddress(address);
-        System.out.println("Enter birthday: ");
+        System.out.println("Nhập địa chỉ: ");
         String birthday = sc.nextLine();
         contact.setBirthday(birthday);
-        System.out.println("Enter email: ");
+        System.out.println("Nhập email: ");
         String email = sc.nextLine();
         contact.setEmail(email);
         return contact;

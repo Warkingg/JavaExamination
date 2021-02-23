@@ -37,10 +37,24 @@ public class Program {
                             pm.updateContact(contact1);
                             break;
                         case 4:
+                            System.out.println("Nhập số điện thoại bạn muốn xóa: ");
+                            int phoneNumber = Integer.parseInt(sc.nextLine());
+                            pm.deleteContact(phoneNumber);
+                            break;
                         case 5:
+                            System.out.println("Nhập số điện thoại muốn tìm kiếm: ");
+                            int phoneNumber1= Integer.parseInt(sc.nextLine());
+                            pm.getContactByPhoneNumber(phoneNumber1);
+                            break;
                         case 6:
+                            break;
                         case 7:
+                            break;
                         case 8:
+                            System.exit(8);
+                            break;
+                        default:
+                            System.out.println("Input Error. Try Again");
                         }
                     }
                 }catch (Exception e) {
