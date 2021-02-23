@@ -2,17 +2,19 @@ package entities;
 
 public class Contact {
     private String name;
-    private String phoneNumber;
+    private int phoneNumber;
     private String address;
     private String email;
     private String gender;
     private String groupContact;
     private String birthday;
 
-    public Contact(String phoneNumber, String groupContact, String name, String address, String birthday, String email) {
+
+    public Contact() {
+
     }
 
-    public Contact(String name, String phoneNumber, String address, String email, String gender, String groupContact, String birthday) {
+    public Contact(int phoneNumber,String name, String address, String email, String gender, String groupContact, String birthday) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.address = address;
@@ -21,7 +23,6 @@ public class Contact {
         this.groupContact = groupContact;
         this.birthday = birthday;
     }
-
 
     public String getBirthday() {
         return birthday;
@@ -55,11 +56,11 @@ public class Contact {
         this.name = name;
     }
 
-    public String getPhoneNumber() {
+    public int getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(int phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 

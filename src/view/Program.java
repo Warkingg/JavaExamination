@@ -29,11 +29,11 @@ public class Program {
                             pm.showAllContact();
                             break;
                         case 2:
-                            Contact contact = Menu.getInfoContact();
+                            Contact contact = Menu.getContactInfo();
                             pm.addContact(contact);
                             break;
                         case 3:
-                            Contact contact1 = Menu.getInfoContact();
+                            Contact contact1 = Menu.getContactInfo();
                             pm.updateContact(contact1);
                             break;
                         case 4:
